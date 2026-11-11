@@ -1,0 +1,168 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #202124;
+  background: #fafafa;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 32px 20px 56px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+nav a {
+  color: #6b6b6b;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.router-link-active {
+  color: #202124;
+}
+
+h1 {
+  margin: 0 0 28px;
+  font-size: clamp(2rem, 5vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  margin: 0 0 8px;
+  font-size: 1.15rem;
+}
+
+p {
+  color: #6b6b6b;
+  line-height: 1.5;
+}
+
+.loading {
+  margin: 24px 0;
+  font-style: italic;
+}
+
+.book {
+  margin-bottom: 12px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.book.favori {
+  border-left: 3px solid #b66a3c;
+}
+
+.badge-favori {
+  display: inline-block;
+  margin: 2px 0 14px;
+  color: #b66a3c;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.book button {
+  margin-right: 8px;
+  padding: 8px 12px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  color: #333;
+  background: #fff;
+  font-size: 0.9rem;
+}
+
+.book button:hover {
+  border-color: #202124;
+}
+
+.book a {
+  color: #b66a3c;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.book a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 36px;
+  padding: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  background: #fff;
+}
+
+form input:not([type="checkbox"]) {
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  outline: none;
+}
+
+form input:not([type="checkbox"]):focus {
+  border-color: #b66a3c;
+  box-shadow: 0 0 0 2px rgb(182 106 60 / 12%);
+}
+
+form label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #6b6b6b;
+  font-size: 0.9rem;
+}
+
+form button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  background: #202124;
+  font-weight: 600;
+}
+
+form button:hover {
+  background: #3c4043;
+}
+
+@media (max-width: 680px) {
+  body {
+    padding: 24px 16px 40px;
+  }
+
+  nav {
+    margin-bottom: 36px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+}
