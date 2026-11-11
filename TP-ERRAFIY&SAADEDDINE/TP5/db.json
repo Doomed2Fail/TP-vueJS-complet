@@ -1,0 +1,34 @@
+{
+  "jobs": [
+    {
+      "id": 1,
+      "title": "Développeur frontend Vue.js",
+      "description": "Concevoir et maintenir des interfaces web accessibles et responsives avec Vue.js.",
+      "salary": 12000,
+      "createdAt": "2026-10-10",
+      "experience": 2,
+      "location": "Safi",
+      "contract": "CDI"
+    },
+    {
+      "id": 2,
+      "title": "Développeur backend Node.js",
+      "description": "Développer des API REST et participer à la conception de services fiables.",
+      "salary": 14500,
+      "createdAt": "2026-10-06",
+      "experience": 3,
+      "location": "Casablanca",
+      "contract": "CDI"
+    },
+    {
+      "id": 3,
+      "title": "Développeur full stack",
+      "description": "Travailler sur les fonctionnalités frontend et backend d'une plateforme métier.",
+      "salary": 16000,
+      "createdAt": "2026-09-28",
+      "experience": 4,
+      "location": "Rabat",
+      "contract": "CDD"
+    }
+  ]
+}
